@@ -7,5 +7,6 @@ void setup(){
     filedata = new FileParser(fileName);
     filedata.seperateMission();
     filedata.Notify();
+    int[][][] t = filedata.getAllUserMissionNum();
 }
 
