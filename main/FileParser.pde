@@ -123,6 +123,7 @@ class FileParser extends Model{
         print(allActionNum[i][4][j]+" ");
       }
       println();
+      println(countsOfAction[i]);
     }
   }
   
@@ -149,6 +150,10 @@ class FileParser extends Model{
   public void setIndex(int[] newIndex){
     index = newIndex;
     updata = true;
+  }
+  
+  public int[] getLabels(){
+    return labels;
   }
   
   
