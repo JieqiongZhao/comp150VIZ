@@ -7,9 +7,9 @@ void setup(){
     filedata = new FileParser(fileName);
     filedata.seperateMission();
     filedata.Notify();
-<<<<<<< HEAD
+//<<<<<<< HEAD
     int[][][] t = filedata.getAllUserMissionNum();
-=======
+//=======
     
     //editted bu sz start
     //window setup
@@ -24,6 +24,7 @@ void setup(){
     mainCanvas = new MainCanvas();
     mainCanvas.render();
     mainCanvas.setParser(filedata);
->>>>>>> class view\MainCanvas\BarChart\OneBar\MyCycle
+
+//>>>>>>> class view\MainCanvas\BarChart\OneBar\MyCycle
 }
 

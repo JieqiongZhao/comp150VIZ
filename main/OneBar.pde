@@ -7,7 +7,7 @@ class OneBar{
   private boolean isect = false;
   private boolean m_sequenceSelected = false;
   private boolean m_sequenceIsected = false;//mouse hover
-  private ArrayList<MyCycle> m_nodes = new ArrayList<MyCycle>();
+  private MyCycle[] m_nodes;
   
   OneBar(String id, int index, String action){
     this.m_id  = id;
@@ -31,7 +31,12 @@ class OneBar{
   public void isectTest(){
   }
   
-  public void render(){//color, operation, position, draw
-  }
+//  public void render(){//color, operation, position, draw
+//    if(m_nodes.size() != 0){
+//      for(int i=0; i<m_nodes.size(); i++){
+//        m_nodes(i).setPosition(m_positionX+i*)
+//      }
+//    }
+//  }
   
 }
