@@ -35,8 +35,13 @@ void setup(){
     clusterCanvas = new ClusterCanvas();
     clusterCanvas.render();
     mainCanvas = new MainCanvas();
-    mainCanvas.render();
     mainCanvas.setParser(filedata);
+<<<<<<< HEAD
 
+=======
+    mainCanvas.setBarChart();
+    mainCanvas.render();
+//editted by sz end
+>>>>>>> render radius update
 }
 

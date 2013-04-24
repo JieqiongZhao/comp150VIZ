@@ -9,10 +9,14 @@ class OneBar{
   private boolean m_sequenceIsected = false;//mouse hover
   private ArrayList<MyCycle> m_nodes = new ArrayList<MyCycle>();
   
-  OneBar(String id, int index, String action){
+  OneBar(String id, String action, int index){
     this.m_id  = id;
     this.index = index;
     this.m_action = action;
+  }
+  
+  public void setIndex(int ind){
+    this.index = ind;
   }
   
   public void setPosition(float posX, float posY){
@@ -31,7 +35,27 @@ class OneBar{
   public void isectTest(){
   }
   
+<<<<<<< HEAD
   public void render(){//color, operation, position, draw
+=======
+  public void setNodes(){
+    String[] oprArray1 = m_action.split("\\s+");
+    m_nodes = new MyCycle[oprArray1.length];
+    for(int i=0; i<oprArray1.length; i++){
+      m_nodes[i] = new MyCycle(oprArray1[i], m_positionX+i/2, m_positionY, 0.5, 1.3);
+      m_nodes[i].setLabel(0);
+      //println(oprArray1[i]+"77777777777777777777777777777");
+    }  
+  }
+  
+  public void render(){//color, operation, position, draw
+    if(m_nodes.length != 0){
+      for(int i=0; i<m_nodes.length; i++){
+//        m_nodes(i).setPosition(m_positionX+i*)
+          m_nodes[i].render();
+      }
+    }
+>>>>>>> render radius update
   }
   
 }
